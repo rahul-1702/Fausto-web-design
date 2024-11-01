@@ -1,0 +1,1542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu';
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    line-height: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.red-sale{
+    background-color: rgb(214, 0, 0) !important;
+}
+
+#sec-1 main, #sec-2 {
+    max-width: 1741px;
+    margin: auto;
+}
+
+/* section 1 ------------------------------ */
+
+header aside {
+    display: none;
+}
+
+#sec-1 {
+    background: url('../images/bg.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#sec-1 main {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+
+#sec-1 header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sec-1 #top-bar {
+    border-radius: 50px;
+    background-color: rgba(253, 253, 253, 0.445);
+    height: 51px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+}
+
+#sec-1 nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#sec-1 nav ul {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#sec-1 nav ul li {
+    font-size: 18px;
+    list-style: none;
+}
+
+#sec-1 nav ul li a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#sec-1 nav #logo {
+    width: 25%;
+    display: grid;
+    place-items: center;
+}
+
+#sec-1 nav #logo img {
+    width: max(70px, 12vw);
+    height: auto;
+    max-width: 250px;
+}
+
+#sec-1 nav #search {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#sec-1 nav #search input {
+    height: 55px;
+    width: 80%;
+    border-radius: 50px;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+#sec-1 nav #search .star {
+    position: relative;
+}
+
+#sec-1 nav #search .star #counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    min-height: 16px;
+    min-width: 16px;
+    border-radius: 50px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+}
+
+#sec-1 nav #search input::placeholder {
+    color: #fff;
+}
+
+#sec-1 nav #search #bars {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sec-1 nav #search #bars .line-bars {
+    border-radius: 50px;
+    height: 5px;
+    width: 30px;
+    background-color: #fff;
+}
+
+#sec-1 nav #search #count {
+    height: 50px;
+    width: 56px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#sec-1 section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#sec-1 section h2 {
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#sec-1 main section h4 {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+#sec-1 section button {
+    background-color: #000;
+    padding: 15px;
+    width: 200px;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* common layout - global-upper-box  */
+
+.global-upper-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.global-upper-box .box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    width: 270px;
+}
+
+.global-upper-box .box img {
+    width: 40px;
+    height: auto;
+}
+
+.global-upper-box .box h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.global-upper-box .box p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* Section 2 ------------------------- */
+
+#sec-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 30px;
+}
+
+#sec-2 #middle-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+#sec-2 #middle-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#sec-2 #middle-box div img {
+    height: 243px;
+    width: auto;
+}
+
+#sec-2 #middle-box div h3 {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* common layout - global-text-design*/
+
+.global-text-design {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.global-text-design .left-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.global-text-design .left-text div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.global-text-design .left-text h2 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 102px;
+}
+
+.global-text-design .left-text span {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.global-text-design .left-text h2:nth-child(2) {
+    margin-left: 70px;
+}
+
+.global-text-design .right-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.global-text-design .right-text p {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.global-text-design .right-text a {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* common layout - global-images-bar */
+
+.global-images-bar {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.global-images-bar section {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.global-images-bar section::-webkit-scrollbar {
+    appearance: none;
+}
+
+.global-images-bar section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.global-images-bar section div img {
+    border-radius: 25px;
+    height: 500px;
+    width: auto;
+}
+
+.global-images-bar section div h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.global-images-bar section div p {
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+/* Section 4 --------------------- */
+
+#sec-4 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ddd;
+}
+
+#sec-4 section {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/laid-back.png') no-repeat center center;
+    border-radius: 30px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+}
+
+#sec-4 section h4 {
+    font-weight: 800;
+    font-size: 98px;
+    line-height: 80px;
+}
+
+#sec-4 section p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+
+#sec-4 section div {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#sec-4 section div p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+/* Section 5 -------------------------- */
+
+#sec-5 {
+    padding: 20px 0 0 10px;
+    background-color: #ddd;
+}
+
+/* Section 6 --------------------------- */
+
+#sec-6 {
+    padding: 50px 0;
+}
+
+/* common layout - global-shoes-card */
+
+.global-shoes-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.global-shoes-cards .title-bar {
+    padding: 10px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.global-shoes-cards .title-bar h3 {
+    font-size: 43px;
+    line-height: 51px;
+    font-weight: 400;
+}
+
+.global-shoes-cards .title-bar a {
+    color: #000;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.global-shoes-cards section {
+    padding: 0 40px;
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    overflow-x: scroll;
+}
+
+.global-shoes-cards section::-webkit-scrollbar {
+    appearance: none;
+}
+
+.global-shoes-cards section .card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+    position: relative;
+}
+
+.global-shoes-cards section .card img {
+    width: 404px;
+    height: auto;
+}
+
+.global-shoes-cards section .card .top-bar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.global-shoes-cards section .card .top-bar p {
+    background-color: #000;
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: #fff;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.global-shoes-cards section .card .top-bar p img{
+    width: auto;
+    height: 14px;
+}
+
+.global-shoes-cards section .card .top-bar button {
+    border: none;
+    cursor: pointer;
+    height: 44px;
+    width: 44px;
+    background: url('../images/favorite_black.png') no-repeat center center;
+}
+
+.global-shoes-cards section .card .text {
+    width: 100%;
+}
+
+.global-shoes-cards section .card .text h3 {
+    font-size: 22px;
+}
+
+.global-shoes-cards section .card .text p {
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    line-height: 60px;
+    color: #000;
+    font-weight: 600;
+}
+
+.global-shoes-cards section .card .text p del {
+    color: #797979;
+    font-weight: 400;
+}
+
+.global-shoes-cards section .card .text p span {
+    color: red;
+    font-weight: 400;
+}
+
+.global-shoes-cards .global-text-design {
+    padding: 40px;
+}
+
+/* Section 9 ------------------------------ */
+
+#sec-9 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#sec-9 section {
+    height: 80vh;
+    width: 100%;
+    background: url('../images/laid-back.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Section 10 ------------------------------ */
+
+#sec-10 {
+    padding: 50px 40px;
+}
+
+#sec-10 section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sec-10 section div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sec-10 section div h3 {
+    font-size: 25px;
+}
+
+#sec-10 section div p {
+    font-size: 18px;
+}
+
+/* Section 11 ---------------------------- */
+
+#sec-11 {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+#sec-11 #title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#sec-11 #title-bar img {
+    height: auto;
+    width: 35px;
+}
+
+#sec-11 #title-bar h3 {
+    font-size: 30px;
+}
+
+#sec-11 section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+#sec-11 section::-webkit-scrollbar {
+    appearance: none;
+}
+
+#sec-11 section .card {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 400px;
+    min-width: 500px;
+}
+
+#sec-11 section .card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+#sec-11 section .card .content .stars {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#sec-11 section .card .content .stars img {
+    height: auto;
+    width: 20px;
+}
+
+/* Section 12 -------------------------- */
+
+#sec-12 {
+    background-color: #000;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    color: #fff;
+}
+
+#sec-12 .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#sec-12 .top h2 {
+    text-align: center;
+}
+
+#sec-12 .top div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#sec-12 .top div img{
+    width: 30px;
+    height: 30px;
+}
+
+#sec-12 .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+#sec-12 .middle .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+#sec-12 .middle .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 200px;
+}
+
+#sec-12 .middle .cards .card img {
+    height: auto;
+    width: 45px;
+}
+
+/* Section 13 ----------------------------- */
+
+#sec-13 {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    height: 300px;
+}
+
+/* Footer ------------------------------- */
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 40px;
+    border-top: 2px solid #ddd;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer #col-1,
+footer #col-2,
+footer #col-3,
+footer #col-4 {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer #col-1 ul,
+footer #col-2 ul,
+footer #col-3 ul,
+footer #col-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+footer #col-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 450px;
+}
+
+footer #col-1 #content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer #col-1 button {
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 14px 18px;
+    font-size: 12px;
+    width: 280px;
+    margin-left: -25px;
+}
+
+footer #col-5 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+footer #col-5 div {
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer #col-5 div input {
+    border: 1px solid #777;
+    outline: none;
+    padding: 10px 15px;
+    color: #777;
+    width: 80%;
+}
+
+
+footer #col-5 div button {
+    background-color: #242424;
+    padding: 10px 25px;
+    color: #fff;
+    border: none;
+}
+
+footer #col-5 ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+footer #col-5 ul li a img {
+    height: auto;
+    width: 35px;
+}
+
+/* media querries --------------------- */
+
+@media screen and (max-width: 1800px) {
+
+    #sec-1 nav ul {
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    #sec-1 nav {
+        gap: 10px;
+    }
+
+    #sec-1 nav ul {
+        width: 38%;
+    }
+
+    #sec-1 nav ul li a {
+        text-transform: capitalize;
+    }
+
+    #sec-1 nav #logo {
+        width: 24%;
+    }
+
+    .global-text-design .left-text div {
+        gap: 20px;
+    }
+
+    .global-text-design .left-text h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .global-text-design .left-text span {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .global-text-design .left-text h2:nth-child(2) {
+        margin-left: 45px;
+    }
+
+    .global-images-bar section div img {
+        height: 400px;
+        width: auto;
+    }
+
+    .global-images-bar section div h3 {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    .global-images-bar section div p {
+        font-size: 18px;
+        line-height: 10px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+
+    #sec-1 nav ul {
+        width: 42%;
+    }
+
+    #sec-1 nav #logo {
+        width: 12%;
+    }
+
+    #sec-1 nav #search {
+        gap: 18px;
+    }
+
+    #sec-1 nav #search input {
+        height: 45px;
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    #sec-1 nav #search #count {
+        height: 32px;
+        width: 35px;
+        font-size: 16px;
+    }
+
+    #sec-1 section {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 30px;
+    }
+
+    #sec-1 section h2 {
+        font-size: 60px;
+    }
+
+    #sec-1 main section h4 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    #sec-4 section {
+        gap: 10px;
+    }
+
+    #sec-4 section h4 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    #sec-4 section div {
+        width: 50%;
+        gap: 40px;
+    }
+
+    .global-shoes-cards section .card img {
+        width: 304px;
+        height: auto;
+    }
+
+    #sec-11 #title-bar img {
+        height: auto;
+        width: 30px;
+    }
+
+    #sec-11 #title-bar h3 {
+        font-size: 25px;
+    }
+
+    #sec-11 section .card {
+        height: 300px;
+        min-width: 400px;
+    }
+
+    #sec-11 section .card .content {
+        width: 90%;
+    }
+
+    footer {
+        gap: 60px;
+        padding: 30px 60px;
+    }
+
+    footer #col-1 {
+        height: unset;
+    }
+
+    footer #col-1 button {
+        gap: 8px;
+        padding: 10px 12px;
+        width: 200px;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+    footer #col-1 button img {
+        width: 20px;
+        height: auto;
+    }
+
+    footer #col-5 div button {
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    #sec-1 nav {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+
+    #sec-1 nav ul {
+        width: 60%;
+    }
+
+    #sec-1 nav #logo {
+        width: 18%;
+    }
+
+    #sec-1 nav #search {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    #sec-1 nav ul {
+        width: 80%;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    #sec-1 nav #search img {
+        width: 30px;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    #sec-1 nav #search .star #counter {
+        min-height: 14px;
+        min-width: 14px;
+        font-size: 10px;
+    }
+
+    #sec-1 #top-bar {
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #sec-1 nav ul {
+        width: 100%;
+        gap: 30px;
+    }
+
+    #sec-1 nav #logo img {
+        width: 100px;
+    }
+
+    #sec-1 nav #search #count {
+        height: 28px;
+        width: 32px;
+    }
+
+    #sec-1 section {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    #sec-1 section h2 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    #sec-1 main section h4 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    #sec-1 section button {
+        padding: 10px;
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .global-text-design {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .global-text-design .left-text {
+        width: 90%;
+    }
+
+    .global-text-design .right-text {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .global-text-design .right-text p {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .global-text-design .left-text div {
+        gap: 20px;
+    }
+
+    .global-text-design .left-text h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .global-text-design .left-text span {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .global-text-design .left-text h2:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    #sec-2 #middle-box div img {
+        height: 143px;
+    }
+
+    #sec-4 section {
+        height: 50vh;
+        border-radius: 0px;
+    }
+
+    #sec-9 section {
+        margin-top: 40px;
+        height: 50vh;
+    }
+
+    .global-images-bar section {
+        gap: 10px;
+    }
+
+    .global-images-bar section {
+        align-items: start;
+    }
+
+    .global-images-bar section div img {
+        border-radius: 15px;
+        height: 260px;
+        width: auto;
+    }
+
+    .global-images-bar section div h3 {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    .global-images-bar section div p {
+        font-size: 15px;
+        line-height: 0px;
+        font-weight: 400;
+    }
+
+    .global-shoes-cards section .card img {
+        width: 304px;
+        height: auto;
+    }
+
+    .global-shoes-cards .title-bar h3 {
+        font-size: 29px;
+        line-height: 30px;
+    }
+
+    .global-shoes-cards .title-bar a {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    footer {
+        padding: 60px 80px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        line-height: 10px;
+    }
+
+    footer #col-5 ul {
+        gap: 15px;
+    }
+
+    footer #col-1 ul,
+    footer #col-2 ul,
+    footer #col-3 ul,
+    footer #col-4 ul {
+        gap: 20px;
+    }
+
+    footer #col-5 ul li a img {
+        height: auto;
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .global-shoes-cards section .card .top-bar p {
+        padding: 0 12px;
+        font-size: 12px;
+    }
+
+    .global-shoes-cards section .card .top-bar button {
+        height: 20px;
+        width: 20px;
+        background-size: contain;
+    }
+
+    .global-text-design {
+        gap: 10px;
+    }
+
+    .global-shoes-cards .global-text-design {
+        padding: 0px;
+    }
+
+    #sec-10 section{
+        padding: 30px 0;
+    }
+
+    .global-text-design .left-text h2, .global-text-design .left-text h2 span, #sec-10 section div h3 {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+    }
+
+    .global-text-design .right-text p, #sec-10 section div p {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    .global-text-design .right-text a {
+        font-size: 15px;
+    }
+
+    #sec-2 {
+        padding: 0px;
+    }
+
+    #sec-5 {
+        padding: 0px;
+    }
+
+    #sec-6 {
+        padding: 10px 0;
+    }
+
+    #sec-13 {
+        height: unset;
+    }
+
+    .global-upper-box {
+        padding: 40px;
+    }
+
+    header #top-bar {
+        margin-top: 60px;
+    }
+
+    #sec-1 nav ul, #sec-1 nav #search input {
+        display: none;
+    }
+
+    #sec-1 nav {
+        justify-content: center;
+        gap: 100px;
+        background-color: rgba(187, 153, 0, 1);
+        border-radius: 15px;
+        position: fixed;
+        top: 10px;
+        z-index: 999;
+        padding: 14px 0;
+        width: 90vw;
+    }
+
+    #sec-1 nav #logo {
+        width: 30%;
+    }
+
+    #sec-1 nav #search {
+        width: 30%;
+        gap: 10px;
+    }
+
+    #sec-1 nav #search img {
+        width: 25px;
+    }
+
+    #sec-1 nav #search #count {
+        width: 25px;
+    }
+
+    header aside {
+        height: 100vh;
+        z-index: 9999;
+        width: 70vw;
+        position: fixed;
+        top: 0px;
+        left: -500px;
+        padding: 25px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: start;
+        gap: 40px;
+        transition: all .3s ease-in-out;
+    }
+
+    header aside .search {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header aside .search input {
+        width: 78%;
+        border-radius: 5px;
+        color: #fff;
+        background: transparent;
+        outline: none;
+        border: 1px solid #fff;
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+
+    header aside .search button {
+        min-width: 40px;
+        border-radius: 5px;
+        color: #fff;
+        background: transparent;
+        outline: none;
+        border: 1px solid #fff;
+        padding: 8px;
+        font-size: 18px;
+        display: grid;
+        place-items: center;
+    }
+
+    header aside .search button img {
+        width: 22px;
+        height: auto;
+    }
+
+    header aside ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header aside ul li a {
+        color: #fff;
+    }
+
+    #sec-1 section h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    #sec-1 main section h4 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    #sec-1 section button {
+        padding: 6px;
+        width: 120px;
+        font-size: 16px;
+    }
+
+    #sec-4 section {
+        gap: 4px;
+        padding: 20px;
+    }
+
+    #sec-4 section h4 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    #sec-4 section p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #sec-4 section div p {
+        font-size: 12px;
+    }
+
+    #sec-4 section div {
+        width: 100%;
+        gap: 50px;
+    }
+
+    .global-shoes-cards section .card img {
+        width: 230px;
+        height: auto;
+    }
+
+    .global-shoes-cards .title-bar h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .global-shoes-cards section .card .text h3 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .global-shoes-cards section .card .text p {
+        font-size: 14px;
+        line-height: 40px;
+        gap: 8px;
+    }
+
+    #sec-10 {
+        padding: 20px;
+    }
+
+    #sec-11 {
+        background-color: #ddd;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    #sec-11 #title-bar img {
+        height: auto;
+        width: 22px;
+    }
+
+    #sec-11 #title-bar h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    #sec-11 section .card {
+        height: 250px;
+        min-width: 300px;
+    }
+
+    #sec-11 section .card .text h4 {
+        font-size: 17px;
+    }
+
+    #sec-11 section .card .text p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    #sec-11 section .card .down h3 {
+        font-size: 16px;
+    }
+
+    #sec-12 .middle {
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    #sec-12 .middle .cards {
+        gap: 50px;
+    }
+
+    .global-images-bar section {
+        padding: 50px 0px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    header aside .search input {
+        width: 70%;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    header aside .search button {
+        min-width: 40px;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    #sec-1 nav #search #count {
+        min-width: 25px;
+    }
+
+    #sec-1 section h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    #sec-1 #top-bar {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .global-shoes-cards .title-bar {
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 60px 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #sec-1 nav {
+        gap: 40px;
+    }
+
+    #sec-1 nav #logo {
+        width: 32%;
+    }
+
+    #sec-1 nav #search {
+        width: 34%;
+        gap: 10px;
+    }
+}
