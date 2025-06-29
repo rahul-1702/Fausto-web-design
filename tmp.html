@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      div {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      p:hover {
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      p::before {
+        content: attr(data-content);
+        display: block;
+        font-weight: 600;
+        height: 0px;
+        visibility: hidden;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+    <div>
+      <p>One</p>
+      <p>Two</p>
+      <p>Three</p>
+      <p>Four</p>
+      <p>Five</p>
+    </div>
+  </body>
+</html>
